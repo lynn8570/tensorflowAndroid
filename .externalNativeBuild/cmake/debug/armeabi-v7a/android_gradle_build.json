@@ -1,0 +1,119 @@
+
+{
+	"buildFiles" : 
+	[
+		"/Users/zowee-laisc/lynn/ASworkspace/ar/tensorflowAndroid/jni/CMakeLists.txt"
+	],
+	"cleanCommands" : 
+	[
+		"/Users/zowee-laisc/lynn/sdk/android-sdk-macosx/cmake/3.6.4111459/bin/cmake --build /Users/zowee-laisc/lynn/ASworkspace/ar/tensorflowAndroid/.externalNativeBuild/cmake/debug/armeabi-v7a --target clean"
+	],
+	"cppFileExtensions" : [ "cc" ],
+	"libraries" : 
+	{
+		"tensorflow_demo-Debug-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "tensorflow_demo",
+			"buildCommand" : "/Users/zowee-laisc/lynn/sdk/android-sdk-macosx/cmake/3.6.4111459/bin/cmake --build /Users/zowee-laisc/lynn/ASworkspace/ar/tensorflowAndroid/.externalNativeBuild/cmake/debug/armeabi-v7a --target tensorflow_demo",
+			"buildType" : "debug",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --sysroot=/Users/zowee-laisc/lynn/sdk/android-sdk-macosx/ndk-bundle/sysroot  -Dtensorflow_demo_EXPORTS -I/Users/zowee-laisc/lynn -I/Users/zowee-laisc/lynn/ASworkspace/ar/tensorflowAndroid/jni -isystem /Users/zowee-laisc/lynn/sdk/android-sdk-macosx/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /Users/zowee-laisc/lynn/sdk/android-sdk-macosx/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem /Users/zowee-laisc/lynn/sdk/android-sdk-macosx/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward  -isystem /Users/zowee-laisc/lynn/sdk/android-sdk-macosx/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security   -mfloat-abi=softfp -mfpu=neon -DSTANDALONE_DEMO_LIB                     -std=c++11 -fno-exceptions -fno-rtti -O2 -Wno-narrowing                     -fPIE -O0  -fPIC    -c ",
+					"src" : "/Users/zowee-laisc/lynn/ASworkspace/ar/tensorflowAndroid/jni/imageutils_jni.cc",
+					"workingDirectory" : "/Users/zowee-laisc/lynn/ASworkspace/ar/tensorflowAndroid/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --sysroot=/Users/zowee-laisc/lynn/sdk/android-sdk-macosx/ndk-bundle/sysroot  -Dtensorflow_demo_EXPORTS -I/Users/zowee-laisc/lynn -I/Users/zowee-laisc/lynn/ASworkspace/ar/tensorflowAndroid/jni -isystem /Users/zowee-laisc/lynn/sdk/android-sdk-macosx/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /Users/zowee-laisc/lynn/sdk/android-sdk-macosx/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem /Users/zowee-laisc/lynn/sdk/android-sdk-macosx/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward  -isystem /Users/zowee-laisc/lynn/sdk/android-sdk-macosx/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security   -mfloat-abi=softfp -mfpu=neon -DSTANDALONE_DEMO_LIB                     -std=c++11 -fno-exceptions -fno-rtti -O2 -Wno-narrowing                     -fPIE -O0  -fPIC    -c ",
+					"src" : "/Users/zowee-laisc/lynn/ASworkspace/ar/tensorflowAndroid/jni/object_tracking/frame_pair.cc",
+					"workingDirectory" : "/Users/zowee-laisc/lynn/ASworkspace/ar/tensorflowAndroid/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --sysroot=/Users/zowee-laisc/lynn/sdk/android-sdk-macosx/ndk-bundle/sysroot  -Dtensorflow_demo_EXPORTS -I/Users/zowee-laisc/lynn -I/Users/zowee-laisc/lynn/ASworkspace/ar/tensorflowAndroid/jni -isystem /Users/zowee-laisc/lynn/sdk/android-sdk-macosx/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /Users/zowee-laisc/lynn/sdk/android-sdk-macosx/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem /Users/zowee-laisc/lynn/sdk/android-sdk-macosx/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward  -isystem /Users/zowee-laisc/lynn/sdk/android-sdk-macosx/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security   -mfloat-abi=softfp -mfpu=neon -DSTANDALONE_DEMO_LIB                     -std=c++11 -fno-exceptions -fno-rtti -O2 -Wno-narrowing                     -fPIE -O0  -fPIC    -c ",
+					"src" : "/Users/zowee-laisc/lynn/ASworkspace/ar/tensorflowAndroid/jni/object_tracking/image_neon.cc",
+					"workingDirectory" : "/Users/zowee-laisc/lynn/ASworkspace/ar/tensorflowAndroid/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --sysroot=/Users/zowee-laisc/lynn/sdk/android-sdk-macosx/ndk-bundle/sysroot  -Dtensorflow_demo_EXPORTS -I/Users/zowee-laisc/lynn -I/Users/zowee-laisc/lynn/ASworkspace/ar/tensorflowAndroid/jni -isystem /Users/zowee-laisc/lynn/sdk/android-sdk-macosx/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /Users/zowee-laisc/lynn/sdk/android-sdk-macosx/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem /Users/zowee-laisc/lynn/sdk/android-sdk-macosx/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward  -isystem /Users/zowee-laisc/lynn/sdk/android-sdk-macosx/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security   -mfloat-abi=softfp -mfpu=neon -DSTANDALONE_DEMO_LIB                     -std=c++11 -fno-exceptions -fno-rtti -O2 -Wno-narrowing                     -fPIE -O0  -fPIC    -c ",
+					"src" : "/Users/zowee-laisc/lynn/ASworkspace/ar/tensorflowAndroid/jni/object_tracking/keypoint_detector.cc",
+					"workingDirectory" : "/Users/zowee-laisc/lynn/ASworkspace/ar/tensorflowAndroid/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --sysroot=/Users/zowee-laisc/lynn/sdk/android-sdk-macosx/ndk-bundle/sysroot  -Dtensorflow_demo_EXPORTS -I/Users/zowee-laisc/lynn -I/Users/zowee-laisc/lynn/ASworkspace/ar/tensorflowAndroid/jni -isystem /Users/zowee-laisc/lynn/sdk/android-sdk-macosx/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /Users/zowee-laisc/lynn/sdk/android-sdk-macosx/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem /Users/zowee-laisc/lynn/sdk/android-sdk-macosx/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward  -isystem /Users/zowee-laisc/lynn/sdk/android-sdk-macosx/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security   -mfloat-abi=softfp -mfpu=neon -DSTANDALONE_DEMO_LIB                     -std=c++11 -fno-exceptions -fno-rtti -O2 -Wno-narrowing                     -fPIE -O0  -fPIC    -c ",
+					"src" : "/Users/zowee-laisc/lynn/ASworkspace/ar/tensorflowAndroid/jni/object_tracking/logging.cc",
+					"workingDirectory" : "/Users/zowee-laisc/lynn/ASworkspace/ar/tensorflowAndroid/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --sysroot=/Users/zowee-laisc/lynn/sdk/android-sdk-macosx/ndk-bundle/sysroot  -Dtensorflow_demo_EXPORTS -I/Users/zowee-laisc/lynn -I/Users/zowee-laisc/lynn/ASworkspace/ar/tensorflowAndroid/jni -isystem /Users/zowee-laisc/lynn/sdk/android-sdk-macosx/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /Users/zowee-laisc/lynn/sdk/android-sdk-macosx/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem /Users/zowee-laisc/lynn/sdk/android-sdk-macosx/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward  -isystem /Users/zowee-laisc/lynn/sdk/android-sdk-macosx/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security   -mfloat-abi=softfp -mfpu=neon -DSTANDALONE_DEMO_LIB                     -std=c++11 -fno-exceptions -fno-rtti -O2 -Wno-narrowing                     -fPIE -O0  -fPIC    -c ",
+					"src" : "/Users/zowee-laisc/lynn/ASworkspace/ar/tensorflowAndroid/jni/object_tracking/object_detector.cc",
+					"workingDirectory" : "/Users/zowee-laisc/lynn/ASworkspace/ar/tensorflowAndroid/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --sysroot=/Users/zowee-laisc/lynn/sdk/android-sdk-macosx/ndk-bundle/sysroot  -Dtensorflow_demo_EXPORTS -I/Users/zowee-laisc/lynn -I/Users/zowee-laisc/lynn/ASworkspace/ar/tensorflowAndroid/jni -isystem /Users/zowee-laisc/lynn/sdk/android-sdk-macosx/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /Users/zowee-laisc/lynn/sdk/android-sdk-macosx/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem /Users/zowee-laisc/lynn/sdk/android-sdk-macosx/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward  -isystem /Users/zowee-laisc/lynn/sdk/android-sdk-macosx/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security   -mfloat-abi=softfp -mfpu=neon -DSTANDALONE_DEMO_LIB                     -std=c++11 -fno-exceptions -fno-rtti -O2 -Wno-narrowing                     -fPIE -O0  -fPIC    -c ",
+					"src" : "/Users/zowee-laisc/lynn/ASworkspace/ar/tensorflowAndroid/jni/object_tracking/object_tracker.cc",
+					"workingDirectory" : "/Users/zowee-laisc/lynn/ASworkspace/ar/tensorflowAndroid/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --sysroot=/Users/zowee-laisc/lynn/sdk/android-sdk-macosx/ndk-bundle/sysroot  -Dtensorflow_demo_EXPORTS -I/Users/zowee-laisc/lynn -I/Users/zowee-laisc/lynn/ASworkspace/ar/tensorflowAndroid/jni -isystem /Users/zowee-laisc/lynn/sdk/android-sdk-macosx/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /Users/zowee-laisc/lynn/sdk/android-sdk-macosx/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem /Users/zowee-laisc/lynn/sdk/android-sdk-macosx/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward  -isystem /Users/zowee-laisc/lynn/sdk/android-sdk-macosx/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security   -mfloat-abi=softfp -mfpu=neon -DSTANDALONE_DEMO_LIB                     -std=c++11 -fno-exceptions -fno-rtti -O2 -Wno-narrowing                     -fPIE -O0  -fPIC    -c ",
+					"src" : "/Users/zowee-laisc/lynn/ASworkspace/ar/tensorflowAndroid/jni/object_tracking/object_tracker_jni.cc",
+					"workingDirectory" : "/Users/zowee-laisc/lynn/ASworkspace/ar/tensorflowAndroid/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --sysroot=/Users/zowee-laisc/lynn/sdk/android-sdk-macosx/ndk-bundle/sysroot  -Dtensorflow_demo_EXPORTS -I/Users/zowee-laisc/lynn -I/Users/zowee-laisc/lynn/ASworkspace/ar/tensorflowAndroid/jni -isystem /Users/zowee-laisc/lynn/sdk/android-sdk-macosx/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /Users/zowee-laisc/lynn/sdk/android-sdk-macosx/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem /Users/zowee-laisc/lynn/sdk/android-sdk-macosx/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward  -isystem /Users/zowee-laisc/lynn/sdk/android-sdk-macosx/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security   -mfloat-abi=softfp -mfpu=neon -DSTANDALONE_DEMO_LIB                     -std=c++11 -fno-exceptions -fno-rtti -O2 -Wno-narrowing                     -fPIE -O0  -fPIC    -c ",
+					"src" : "/Users/zowee-laisc/lynn/ASworkspace/ar/tensorflowAndroid/jni/object_tracking/optical_flow.cc",
+					"workingDirectory" : "/Users/zowee-laisc/lynn/ASworkspace/ar/tensorflowAndroid/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --sysroot=/Users/zowee-laisc/lynn/sdk/android-sdk-macosx/ndk-bundle/sysroot  -Dtensorflow_demo_EXPORTS -I/Users/zowee-laisc/lynn -I/Users/zowee-laisc/lynn/ASworkspace/ar/tensorflowAndroid/jni -isystem /Users/zowee-laisc/lynn/sdk/android-sdk-macosx/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /Users/zowee-laisc/lynn/sdk/android-sdk-macosx/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem /Users/zowee-laisc/lynn/sdk/android-sdk-macosx/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward  -isystem /Users/zowee-laisc/lynn/sdk/android-sdk-macosx/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security   -mfloat-abi=softfp -mfpu=neon -DSTANDALONE_DEMO_LIB                     -std=c++11 -fno-exceptions -fno-rtti -O2 -Wno-narrowing                     -fPIE -O0  -fPIC    -c ",
+					"src" : "/Users/zowee-laisc/lynn/ASworkspace/ar/tensorflowAndroid/jni/object_tracking/time_log.cc",
+					"workingDirectory" : "/Users/zowee-laisc/lynn/ASworkspace/ar/tensorflowAndroid/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --sysroot=/Users/zowee-laisc/lynn/sdk/android-sdk-macosx/ndk-bundle/sysroot  -Dtensorflow_demo_EXPORTS -I/Users/zowee-laisc/lynn -I/Users/zowee-laisc/lynn/ASworkspace/ar/tensorflowAndroid/jni -isystem /Users/zowee-laisc/lynn/sdk/android-sdk-macosx/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /Users/zowee-laisc/lynn/sdk/android-sdk-macosx/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem /Users/zowee-laisc/lynn/sdk/android-sdk-macosx/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward  -isystem /Users/zowee-laisc/lynn/sdk/android-sdk-macosx/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security   -mfloat-abi=softfp -mfpu=neon -DSTANDALONE_DEMO_LIB                     -std=c++11 -fno-exceptions -fno-rtti -O2 -Wno-narrowing                     -fPIE -O0  -fPIC    -c ",
+					"src" : "/Users/zowee-laisc/lynn/ASworkspace/ar/tensorflowAndroid/jni/object_tracking/tracked_object.cc",
+					"workingDirectory" : "/Users/zowee-laisc/lynn/ASworkspace/ar/tensorflowAndroid/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --sysroot=/Users/zowee-laisc/lynn/sdk/android-sdk-macosx/ndk-bundle/sysroot  -Dtensorflow_demo_EXPORTS -I/Users/zowee-laisc/lynn -I/Users/zowee-laisc/lynn/ASworkspace/ar/tensorflowAndroid/jni -isystem /Users/zowee-laisc/lynn/sdk/android-sdk-macosx/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /Users/zowee-laisc/lynn/sdk/android-sdk-macosx/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem /Users/zowee-laisc/lynn/sdk/android-sdk-macosx/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward  -isystem /Users/zowee-laisc/lynn/sdk/android-sdk-macosx/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security   -mfloat-abi=softfp -mfpu=neon -DSTANDALONE_DEMO_LIB                     -std=c++11 -fno-exceptions -fno-rtti -O2 -Wno-narrowing                     -fPIE -O0  -fPIC    -c ",
+					"src" : "/Users/zowee-laisc/lynn/ASworkspace/ar/tensorflowAndroid/jni/object_tracking/utils_neon.cc",
+					"workingDirectory" : "/Users/zowee-laisc/lynn/ASworkspace/ar/tensorflowAndroid/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --sysroot=/Users/zowee-laisc/lynn/sdk/android-sdk-macosx/ndk-bundle/sysroot  -Dtensorflow_demo_EXPORTS -I/Users/zowee-laisc/lynn -I/Users/zowee-laisc/lynn/ASworkspace/ar/tensorflowAndroid/jni -isystem /Users/zowee-laisc/lynn/sdk/android-sdk-macosx/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /Users/zowee-laisc/lynn/sdk/android-sdk-macosx/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem /Users/zowee-laisc/lynn/sdk/android-sdk-macosx/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward  -isystem /Users/zowee-laisc/lynn/sdk/android-sdk-macosx/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security   -mfloat-abi=softfp -mfpu=neon -DSTANDALONE_DEMO_LIB                     -std=c++11 -fno-exceptions -fno-rtti -O2 -Wno-narrowing                     -fPIE -O0  -fPIC    -c ",
+					"src" : "/Users/zowee-laisc/lynn/ASworkspace/ar/tensorflowAndroid/jni/rgb2yuv.cc",
+					"workingDirectory" : "/Users/zowee-laisc/lynn/ASworkspace/ar/tensorflowAndroid/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --sysroot=/Users/zowee-laisc/lynn/sdk/android-sdk-macosx/ndk-bundle/sysroot  -Dtensorflow_demo_EXPORTS -I/Users/zowee-laisc/lynn -I/Users/zowee-laisc/lynn/ASworkspace/ar/tensorflowAndroid/jni -isystem /Users/zowee-laisc/lynn/sdk/android-sdk-macosx/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /Users/zowee-laisc/lynn/sdk/android-sdk-macosx/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem /Users/zowee-laisc/lynn/sdk/android-sdk-macosx/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward  -isystem /Users/zowee-laisc/lynn/sdk/android-sdk-macosx/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security   -mfloat-abi=softfp -mfpu=neon -DSTANDALONE_DEMO_LIB                     -std=c++11 -fno-exceptions -fno-rtti -O2 -Wno-narrowing                     -fPIE -O0  -fPIC    -c ",
+					"src" : "/Users/zowee-laisc/lynn/ASworkspace/ar/tensorflowAndroid/jni/yuv2rgb.cc",
+					"workingDirectory" : "/Users/zowee-laisc/lynn/ASworkspace/ar/tensorflowAndroid/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				}
+			],
+			"output" : "/Users/zowee-laisc/lynn/ASworkspace/ar/tensorflowAndroid/gradleBuild/intermediates/cmake/debug/obj/armeabi-v7a/libtensorflow_demo.so",
+			"toolchain" : "2080616203528529576"
+		}
+	},
+	"toolchains" : 
+	{
+		"2080616203528529576" : 
+		{
+			"cCompilerExecutable" : "/Users/zowee-laisc/lynn/sdk/android-sdk-macosx/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-gcc",
+			"cppCompilerExecutable" : "/Users/zowee-laisc/lynn/sdk/android-sdk-macosx/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++"
+		}
+	}
+}

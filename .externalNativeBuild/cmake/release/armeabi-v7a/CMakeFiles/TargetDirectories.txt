@@ -1,0 +1,3 @@
+/Users/zowee-laisc/lynn/ASworkspace/ar/tensorflowAndroid/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/edit_cache.dir
+/Users/zowee-laisc/lynn/ASworkspace/ar/tensorflowAndroid/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/rebuild_cache.dir
+/Users/zowee-laisc/lynn/ASworkspace/ar/tensorflowAndroid/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/tensorflow_demo.dir
