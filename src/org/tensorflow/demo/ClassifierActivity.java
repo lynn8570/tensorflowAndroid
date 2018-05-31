@@ -24,6 +24,7 @@ import android.graphics.Paint;
 import android.graphics.Typeface;
 import android.media.ImageReader.OnImageAvailableListener;
 import android.os.SystemClock;
+import android.util.Log;
 import android.util.Size;
 import android.util.TypedValue;
 import android.view.Display;
@@ -39,7 +40,7 @@ import org.tensorflow.demo.R; // Explicit import needed for internal Google buil
 public class ClassifierActivity extends CameraActivity implements OnImageAvailableListener {
   private static final Logger LOGGER = new Logger();
 
-  protected static final boolean SAVE_PREVIEW_BITMAP = false;
+  protected static final boolean SAVE_PREVIEW_BITMAP = true;
 
   private ResultsView resultsView;
 
@@ -70,6 +71,8 @@ public class ClassifierActivity extends CameraActivity implements OnImageAvailab
   private static final float IMAGE_STD = 1;
   private static final String INPUT_NAME = "input";
   private static final String OUTPUT_NAME = "output";
+
+
 
 
   private static final String MODEL_FILE = "file:///android_asset/tensorflow_inception_graph.pb";
@@ -105,6 +108,8 @@ public class ClassifierActivity extends CameraActivity implements OnImageAvailab
 
   @Override
   public void onPreviewSizeChosen(final Size size, final int rotation) {
+
+    Log.i("linlian","ClassifierActivity.onPreviewSizeChosen");
     final float textSizePx = TypedValue.applyDimension(
         TypedValue.COMPLEX_UNIT_DIP, TEXT_SIZE_DIP, getResources().getDisplayMetrics());
     borderedText = new BorderedText(textSizePx);
@@ -135,11 +140,15 @@ public class ClassifierActivity extends CameraActivity implements OnImageAvailab
         previewWidth, previewHeight,
         INPUT_SIZE, INPUT_SIZE,
         sensorOrientation, MAINTAIN_ASPECT);
+      Log.i("linlian","ClassifierActivity.processImage frameToCropTransform="+frameToCropTransform);
 
     cropToFrameTransform = new Matrix();
     frameToCropTransform.invert(cropToFrameTransform);
+      Log.i("linlian","ClassifierActivity.processImage frameToCropTransform="+frameToCropTransform);
 
-    addCallback(
+      Log.i("linlian","ClassifierActivity.processImage cropToFrameTransform="+cropToFrameTransform);
+
+      addCallback(
         new DrawCallback() {
           @Override
           public void drawCallback(final Canvas canvas) {
@@ -150,8 +159,10 @@ public class ClassifierActivity extends CameraActivity implements OnImageAvailab
 
   @Override
   protected void processImage() {
+      Log.i("linlian","processImage()");
     rgbFrameBitmap.setPixels(getRgbBytes(), 0, previewWidth, 0, 0, previewWidth, previewHeight);
     final Canvas canvas = new Canvas(croppedBitmap);
+
     canvas.drawBitmap(rgbFrameBitmap, frameToCropTransform, null);
 
     // For examining the actual TF input.
@@ -163,9 +174,11 @@ public class ClassifierActivity extends CameraActivity implements OnImageAvailab
           @Override
           public void run() {
             final long startTime = SystemClock.uptimeMillis();
+            //进行识别
             final List<Classifier.Recognition> results = classifier.recognizeImage(croppedBitmap);
+
             lastProcessingTimeMs = SystemClock.uptimeMillis() - startTime;
-            LOGGER.i("Detect: %s", results);
+            LOGGER.i("Detect: %s", results);//[[838] pot (42.3%), [322] pineapple (12.4%)]
             cropCopyBitmap = Bitmap.createBitmap(croppedBitmap);
             if (resultsView == null) {
               resultsView = (ResultsView) findViewById(R.id.results);

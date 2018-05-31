@@ -35,6 +35,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.HandlerThread;
 import android.os.Trace;
+import android.util.Log;
 import android.util.Size;
 import android.view.KeyEvent;
 import android.view.Surface;
@@ -54,7 +55,7 @@ public abstract class CameraActivity extends Activity
   private static final String PERMISSION_CAMERA = Manifest.permission.CAMERA;
   private static final String PERMISSION_STORAGE = Manifest.permission.WRITE_EXTERNAL_STORAGE;
 
-  private boolean debug = false;
+  private boolean debug = true;
 
   private Handler handler;
   private HandlerThread handlerThread;
@@ -105,8 +106,9 @@ public abstract class CameraActivity extends Activity
    */
   @Override
   public void onPreviewFrame(final byte[] bytes, final Camera camera) {
+    Log.i("linlian","CameraActivity.onPreviewFrame()");
     if (isProcessingFrame) {
-      LOGGER.w("Dropping frame!");
+      LOGGER.w("Dropping frame!");//如果正在处理，则丢掉这一frame
       return;
     }
 
@@ -116,7 +118,7 @@ public abstract class CameraActivity extends Activity
         Camera.Size previewSize = camera.getParameters().getPreviewSize();
         previewHeight = previewSize.height;
         previewWidth = previewSize.width;
-        rgbBytes = new int[previewWidth * previewHeight];
+        rgbBytes = new int[previewWidth * previewHeight];//初始化 rgbBytes
         onPreviewSizeChosen(new Size(previewSize.width, previewSize.height), 90);
       }
     } catch (final Exception e) {
@@ -357,12 +359,13 @@ public abstract class CameraActivity extends Activity
     }
 
     Fragment fragment;
-    if (useCamera2API) {
+    if (useCamera2API) {//true
       CameraConnectionFragment camera2Fragment =
           CameraConnectionFragment.newInstance(
               new CameraConnectionFragment.ConnectionCallback() {
                 @Override
                 public void onPreviewSizeChosen(final Size size, final int rotation) {
+                  Log.i("linlian","useCamera2API onPreviewSizeChosen=");
                   previewHeight = size.getHeight();
                   previewWidth = size.getWidth();
                   CameraActivity.this.onPreviewSizeChosen(size, rotation);

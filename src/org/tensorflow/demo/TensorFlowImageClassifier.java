@@ -52,7 +52,7 @@ public class TensorFlowImageClassifier implements Classifier {
   private float[] outputs;
   private String[] outputNames;
 
-  private boolean logStats = false;
+  private boolean logStats = true;
 
   private TensorFlowInferenceInterface inferenceInterface;
 
@@ -103,6 +103,7 @@ public class TensorFlowImageClassifier implements Classifier {
     c.inferenceInterface = new TensorFlowInferenceInterface(assetManager, modelFilename);
 
     // The shape of the output is [N, NUM_CLASSES], where N is the batch size.
+    Log.i("linlian","outputName="+outputName);
     final Operation operation = c.inferenceInterface.graphOperation(outputName);
     final int numClasses = (int) operation.output(0).shape().size(1);
     Log.i(TAG, "Read " + c.labels.size() + " labels, output layer size is " + numClasses);
@@ -125,6 +126,7 @@ public class TensorFlowImageClassifier implements Classifier {
 
   @Override
   public List<Recognition> recognizeImage(final Bitmap bitmap) {
+      Log.i("linlian","recognizeImage");
     // Log this method so that it can be analyzed with systrace.
     Trace.beginSection("recognizeImage");
 
@@ -132,11 +134,13 @@ public class TensorFlowImageClassifier implements Classifier {
     // Preprocess the image data from 0-255 int to normalized float based
     // on the provided parameters.
     bitmap.getPixels(intValues, 0, bitmap.getWidth(), 0, 0, bitmap.getWidth(), bitmap.getHeight());
+      Log.i("linlian","recognizeImage intValues.length="+intValues.length);
     for (int i = 0; i < intValues.length; ++i) {
       final int val = intValues[i];
       floatValues[i * 3 + 0] = (((val >> 16) & 0xFF) - imageMean) / imageStd;
       floatValues[i * 3 + 1] = (((val >> 8) & 0xFF) - imageMean) / imageStd;
       floatValues[i * 3 + 2] = ((val & 0xFF) - imageMean) / imageStd;
+      //Log.i("linlian"," i="+i+"  "+floatValues[i * 3 + 0]+" "+floatValues[i * 3 + 0]+"  "+floatValues[i * 3 + 0]);
     }
     Trace.endSection();
 

@@ -43,6 +43,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.HandlerThread;
 import android.text.TextUtils;
+import android.util.Log;
 import android.util.Size;
 import android.util.SparseIntArray;
 import android.view.LayoutInflater;
@@ -92,22 +93,28 @@ public class CameraConnectionFragment extends Fragment {
         @Override
         public void onSurfaceTextureAvailable(
             final SurfaceTexture texture, final int width, final int height) {
+          Log.i("linlian","SurfaceTextureListener.onSurfaceTextureAvailable width="+width+ " height"+height);
+
           openCamera(width, height);
         }
 
         @Override
         public void onSurfaceTextureSizeChanged(
             final SurfaceTexture texture, final int width, final int height) {
+          Log.i("linlian","SurfaceTextureListener.onSurfaceTextureSizeChanged width="+width+ " height"+height);
           configureTransform(width, height);
         }
 
         @Override
         public boolean onSurfaceTextureDestroyed(final SurfaceTexture texture) {
+          Log.i("linlian","SurfaceTextureListener.onSurfaceTextureDestroyed");
           return true;
         }
 
         @Override
-        public void onSurfaceTextureUpdated(final SurfaceTexture texture) {}
+        public void onSurfaceTextureUpdated(final SurfaceTexture texture) {
+          Log.i("linlian","SurfaceTextureListener.onSurfaceTextureUpdated");
+        }
       };
 
   /**
